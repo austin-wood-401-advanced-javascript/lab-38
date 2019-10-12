@@ -1,5 +1,6 @@
 import React from 'react';
 import Modal from '../modal';
+// import {connect} from 'react-redux';
 
 const Item = (props) => {
 
@@ -19,5 +20,9 @@ const Item = (props) => {
     </Modal>
   );
 };
+
+const mapStateToProps = (state) => ({
+  item: state.item,
+})
 
 export default Item;
